@@ -10,4 +10,4 @@ Link for the backend repo: https://github.com/bondar-artem/angular-realworld-exa
 
 To run karate tests:
 1. ```mvn test```
-2. With tags: ```mvn test -Dkarate.options="--tags @tagName"
+2. With tags: ```mvn test -Dkarate.options="--tags @tagName"```

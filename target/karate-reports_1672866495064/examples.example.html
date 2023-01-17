@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("ecd77894-30fa-4a22-939d-423600665c24",{name:"fayasta"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.example</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-01-04 04:06:33 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[6:49]"><span>[6:49]</span> <span>Get- Validate structure</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/example.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Tests for example purposes</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:49]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">debug</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:49]</span>
+                <span class="scenario-name">Get- Validate structure</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>575</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:49]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:49]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url base_url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">16:06:33.220 &lt;&lt; lock released, cached callSingle: classpath:helpers/createToke.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.createToke</div>
+      </div>
+      <div class="time-cell passed">908</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url base_url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.5">16:06:32.263 karate.env system property was: null 
+16:06:32.271 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/createToke.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: {&quot;email&quot;:&quot;#(userEmail)&quot;, &quot;password&quot;: &quot;#(userPassword)&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">882</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.8">16:06:32.683 request:
+1 &gt; POST https://conduit.productionready.io/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 59
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;}}
+
+16:06:32.834 request:
+2 &gt; POST https://conduit.productionready.io/api/users/login
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 59
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;}}
+
+16:06:33.213 response time in milliseconds: 376
+2 &lt; 200
+2 &lt; Date: Wed, 04 Jan 2023 21:06:33 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;14a-rZjI3kMgL8PuZLWTlFDCiUtkf+Y&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=eZ9Jm1rHDd1IDAR1wa%2F22QZ2BQX5JWjSJs1T2FMjxWMd%2BJTd9a68SmmLqcqKO5SzlvVsGrJGBjYyf8x6AdwvwN%2BAT%2FoPTx6rpwWJXDPXdJ1fme7DSCOOW4OlUiFrpz0jNCc5&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 7846f04cdbe8954e-LIM
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate@test.com&quot;,&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg2NjM5MywiZXhwIjoxNjc4MDUwMzkzfQ.Q1iVUgvjnP-O5wiwETppxHVS6PXa4S2zx63x0R9y6po&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authorization_token = response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timeValidatorRegex = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params {limit: 10, offset: 0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">534</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.53">16:06:33.241 request:
+1 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg2NjM5MywiZXhwIjoxNjc4MDUwMzkzfQ.Q1iVUgvjnP-O5wiwETppxHVS6PXa4S2zx63x0R9y6po
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:06:33.270 request:
+2 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg2NjM5MywiZXhwIjoxNjc4MDUwMzkzfQ.Q1iVUgvjnP-O5wiwETppxHVS6PXa4S2zx63x0R9y6po
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+16:06:33.771 response time in milliseconds: 500
+2 &lt; 200
+2 &lt; Date: Wed, 04 Jan 2023 21:06:33 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;1616-Cm116yUk9DvoNebdqW4RL6E2rjU&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=KJVxKnguXMsIe9GJgKaDtD22mbo8yROYb5XSrUpq3Rra4vi%2BJXqBO8d467JaSDMs5LKw8RDTvL3e7enQjTH%2BQ9XA6ipAQ9MTBqjG4M6k451jW%2BN6wgAU%2BhpMz8MlTQVbc9dI&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 7846f04f793f36e7-LIM
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Fer-sfdsfdsdf123231321312-644&quot;,&quot;title&quot;:&quot;Fer sfdsfdsdf123231321312&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sdsdsd2222-644&quot;,&quot;title&quot;:&quot;Fer sdsdsd2222&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blaaaaa-644&quot;,&quot;title&quot;:&quot;Bla blaaaaa&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blanjnjnjnnj-644&quot;,&quot;title&quot;:&quot;Bla blanjnjnjnnj&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tittle-644&quot;,&quot;title&quot;:&quot;Tittle&quot;,&quot;description&quot;:&quot;About lerning&quot;,&quot;body&quot;:&quot;aaaa&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeren-644&quot;,&quot;title&quot;:&quot;Jeren&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;And so he spoke, and so he spoke, that Lord of Castamere, but now the rains weep o&#39;er his hall, with no one there to hear. Yes, now the rains weep o&#39;er his hall, and not a soul to hear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jenny-644&quot;,&quot;title&quot;:&quot;Jenny&quot;,&quot;description&quot;:&quot;Sunspear&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:54:00.519Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:54:00.519Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Walda-Frey-644&quot;,&quot;title&quot;:&quot;Walda Frey&quot;,&quot;description&quot;:&quot;King&#39;s Landing&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:52:50.211Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:52:50.211Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Robin-644&quot;,&quot;title&quot;:&quot;Robin&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:52:45.014Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:52:45.014Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;If-we-quantify-the-alarm-we-can-get-to-the-FTP-pixel-through-the-online-SSL-interface!-120863&quot;,&quot;title&quot;:&quot;If we quantify the alarm, we can get to the FTP pixel through the online SSL interface!&quot;,&quot;description&quot;:&quot;Omnis perspiciatis qui quia commodi sequi modi. Nostrum quam aut cupiditate est facere omnis possimus. Tenetur similique nemo illo soluta molestias facere quo. Ipsam totam facilis delectus nihil quidem soluta vel est omnis.&quot;,&quot;body&quot;:&quot;Quia quo iste et aperiam voluptas consectetur a omnis et.\\nDolores et earum consequuntur sunt et.\\nEa nulla ab voluptatem dicta vel. Temporibus aut adipisci magnam aliquam eveniet nihil laudantium reprehenderit sit.\\nAspernatur cumque labore voluptates mollitia deleniti et. Quos pariatur tenetur.\\nQuasi omnis eveniet eos maiores esse magni possimus blanditiis.\\nQui incidunt sit quos consequatur aut qui et aperiam delectus.\\nPraesentium quas culpa.\\nEaque occaecati cumque incidunt et. Provident saepe omnis non molestiae natus et.\\nAccusamus laudantium hic unde voluptate et sunt voluptatem.\\nMollitia velit id eius mollitia occaecati repudiandae. Voluptatum tempora voluptas est odio iure odio dolorem.\\nVoluptatum est deleniti explicabo explicabo harum provident quis molestiae. Sed dolores nostrum quis. Aut ipsa et qui vel similique sed hic a.\\nVoluptates dolorem culpa nihil aut ipsam voluptatem. Cupiditate officia voluptatum.\\nTenetur facere eum distinctio animi qui laboriosam.\\nQuod sed voluptatem et cumque est eos.\\nSint id provident suscipit harum odio et. Facere beatae delectus ut.\\nPossimus voluptas perspiciatis voluptatem nihil sint praesentium.\\nSint est nihil voluptates nesciunt voluptatibus temporibus blanditiis.\\nOfficiis voluptatem earum sed. Deserunt ab porro similique est accusamus id enim aut suscipit.\\nSoluta reprehenderit error nesciunt odit veniam sed.\\nDolore optio qui aut ab.\\nAut minima provident eius repudiandae a quibusdam in nisi quam.&quot;,&quot;tagList&quot;:[&quot;rerum&quot;,&quot;maiores&quot;,&quot;omnis&quot;,&quot;quae&quot;],&quot;createdAt&quot;:&quot;2022-12-09T13:46:24.264Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-09T13:46:24.264Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:147,&quot;author&quot;:{&quot;username&quot;:&quot;Anah Benešová&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/demo-avatar.png&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:256}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref failed">55</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match each response.articles ==</span>
+      </div>
+    </div>
+    <div class="time-cell failed">28</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.55">{
+    &quot;slug&quot;:&quot;#string&quot;,
+    &quot;title&quot;:&quot;#string&quot;,
+    &quot;description&quot;:&quot;#string&quot;,
+    &quot;body&quot;:&quot;#string&quot;,
+    &quot;tagList&quot;:&quot;#array&quot;,
+    &quot;createdAt&quot;:&quot;#? timeValidatorRegex(_)&quot;,
+    &quot;updatedAt&quot;:&quot;#? timeValidatorRegex(_)&quot;,
+    &quot;favorited&quot;:&quot;#boolean&quot;,
+    &quot;favoritesCount&quot;:&quot;#number&quot;,
+    &quot;author&quot;: {
+        &quot;username&quot;:&quot;#string&quot;,
+        &quot;bio&quot;:&quot;##string&quot;,
+        &quot;image&quot;:&quot;#string&quot;,
+        &quot;following&quot;:&quot;#boolean&quot;,
+    }
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="0.55">16:06:33.802 classpath:examples/example.feature:55
+And match each response.articles ==
+&quot;&quot;&quot;
+{
+    &quot;slug&quot;:&quot;#string&quot;,
+    &quot;title&quot;:&quot;#string&quot;,
+    &quot;description&quot;:&quot;#string&quot;,
+    &quot;body&quot;:&quot;#string&quot;,
+    &quot;tagList&quot;:&quot;#array&quot;,
+    &quot;createdAt&quot;:&quot;#? timeValidatorRegex(_)&quot;,
+    &quot;updatedAt&quot;:&quot;#? timeValidatorRegex(_)&quot;,
+    &quot;favorited&quot;:&quot;#boolean&quot;,
+    &quot;favoritesCount&quot;:&quot;#number&quot;,
+    &quot;author&quot;: {
+        &quot;username&quot;:&quot;#string&quot;,
+        &quot;bio&quot;:&quot;##string&quot;,
+        &quot;image&quot;:&quot;#string&quot;,
+        &quot;following&quot;:&quot;#boolean&quot;,
+    }
+}
+&quot;&quot;&quot;
+ReferenceError: &quot;SimpleDateFormat&quot; is not defined
+classpath:examples/example.feature:55
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

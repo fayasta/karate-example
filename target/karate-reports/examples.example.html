@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("ecd77894-30fa-4a22-939d-423600665c24",{name:"fayasta"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.example</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-01-04 06:11:43 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[7:76]"><span>[7:76]</span> <span>retry request</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:85]"><span>[8:85]</span> <span>Sleep request</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/example.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Tests for example purposes</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:76]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">debugretry</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:76]</span>
+                <span class="scenario-name">retry request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>642</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:76]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url base_url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">18:11:37.790 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure retry = {count: 10, interval: 5000}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params {limit:10, offset:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>retry until response.articles[0].favoritesCount == 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">641</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.81">18:11:37.796 request:
+1 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3Mzg5NywiZXhwIjoxNjc4MDU3ODk3fQ.06r-vC1I3-PTRdXcF1AZuFvocwt_0a5q860eNmJWkHw
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:11:37.841 request:
+2 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3Mzg5NywiZXhwIjoxNjc4MDU3ODk3fQ.06r-vC1I3-PTRdXcF1AZuFvocwt_0a5q860eNmJWkHw
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+18:11:38.432 response time in milliseconds: 591
+2 &lt; 200
+2 &lt; Date: Wed, 04 Jan 2023 23:11:38 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;eb8-HmgpTB5J3Def8aIDH5DGG8t4cwE&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=q20mc9yGTPlxC%2BGrgHhIKvE2G5hi8Qi925kFIQ2u88V1GAgQ69Vxne2oBqp8b4Dkr%2FFecDwF%2FIJeWrcdu7rIX3%2F216Fdeu%2FbI3flZADCekgTHXmzvZ6R1N1DmDicIYh09%2Bkt&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 7847a786096a9543-LIM
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Daemon-II-Blackfyre-644&quot;,&quot;title&quot;:&quot;Daemon II Blackfyre&quot;,&quot;description&quot;:&quot;Pyne&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aegon-Frey-644&quot;,&quot;title&quot;:&quot;Aegon Frey&quot;,&quot;description&quot;:&quot;Branfield&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jonella-Cerwyn-644&quot;,&quot;title&quot;:&quot;Jonella Cerwyn&quot;,&quot;description&quot;:&quot;Chambers&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-qweqwe12321312sa-644&quot;,&quot;title&quot;:&quot;Fer qweqwe12321312sa&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sfdsfdsdf123231321312-644&quot;,&quot;title&quot;:&quot;Fer sfdsfdsdf123231321312&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sdsdsd2222-644&quot;,&quot;title&quot;:&quot;Fer sdsdsd2222&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blaaaaa-644&quot;,&quot;title&quot;:&quot;Bla blaaaaa&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blanjnjnjnnj-644&quot;,&quot;title&quot;:&quot;Bla blanjnjnjnnj&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tittle-644&quot;,&quot;title&quot;:&quot;Tittle&quot;,&quot;description&quot;:&quot;About lerning&quot;,&quot;body&quot;:&quot;aaaa&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeren-644&quot;,&quot;title&quot;:&quot;Jeren&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;And so he spoke, and so he spoke, that Lord of Castamere, but now the rains weep o&#39;er his hall, with no one there to hear. Yes, now the rains weep o&#39;er his hall, and not a soul to hear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:260}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:85]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">debugretry</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:85]</span>
+                <span class="scenario-name">Sleep request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5649</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:85]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:85]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url base_url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">18:11:37.780 &lt;&lt; lock released, cached callSingle: classpath:helpers/createToke.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.createToke</div>
+      </div>
+      <div class="time-cell passed">1106</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url base_url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.5">18:11:36.621 karate.env system property was: null 
+18:11:36.630 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/createToke.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: {&quot;email&quot;:&quot;#(userEmail)&quot;, &quot;password&quot;: &quot;#(userPassword)&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">126</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">973</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.8">18:11:37.099 request:
+1 &gt; POST https://conduit.productionready.io/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 59
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;}}
+
+18:11:37.265 request:
+2 &gt; POST https://conduit.productionready.io/api/users/login
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 59
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;}}
+
+18:11:37.771 response time in milliseconds: 504
+2 &lt; 200
+2 &lt; Date: Wed, 04 Jan 2023 23:11:37 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;14a-dD/o9leIwWuuRhSv9gMmskQDvUk&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2Bo1pW1xEX27OLivWOU0VoPa%2BevWU4%2FsDDNn2XoOExlCaO47%2FMLj61VpO15MRyX4%2F6GvzesoFay%2BNFb4x5e2FvaTd8I4ShC8f0z%2B%2BSYQVuJmal3S%2FZFdTHveuL5REB%2F7HixUr&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 7847a7829f7c971c-LIM
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate@test.com&quot;,&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3Mzg5NywiZXhwIjoxNjc4MDU3ODk3fQ.06r-vC1I3-PTRdXcF1AZuFvocwt_0a5q860eNmJWkHw&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authorization_token = response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sleep = function(pause){java.lang.Thread.sleep(pause)}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params {limit:10, offset:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">624</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.89">18:11:37.792 request:
+1 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3Mzg5NywiZXhwIjoxNjc4MDU3ODk3fQ.06r-vC1I3-PTRdXcF1AZuFvocwt_0a5q860eNmJWkHw
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:11:37.848 request:
+2 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3Mzg5NywiZXhwIjoxNjc4MDU3ODk3fQ.06r-vC1I3-PTRdXcF1AZuFvocwt_0a5q860eNmJWkHw
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+18:11:38.411 response time in milliseconds: 563
+2 &lt; 200
+2 &lt; Date: Wed, 04 Jan 2023 23:11:38 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;eb8-HmgpTB5J3Def8aIDH5DGG8t4cwE&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=drxq3ecATYd%2BUhsCNXsW%2FH6VStegkP4WSbcO7lpVL3DqsE5i1JwByYAVFK016UsD0sUE9hy9HXMZTurDodN3iebb2krXzqN2w68455kBaq0ZKrZMRT75mV52AiASaZBX5T%2BY&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 7847a7861a7c56a0-LIM
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Daemon-II-Blackfyre-644&quot;,&quot;title&quot;:&quot;Daemon II Blackfyre&quot;,&quot;description&quot;:&quot;Pyne&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aegon-Frey-644&quot;,&quot;title&quot;:&quot;Aegon Frey&quot;,&quot;description&quot;:&quot;Branfield&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jonella-Cerwyn-644&quot;,&quot;title&quot;:&quot;Jonella Cerwyn&quot;,&quot;description&quot;:&quot;Chambers&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-qweqwe12321312sa-644&quot;,&quot;title&quot;:&quot;Fer qweqwe12321312sa&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sfdsfdsdf123231321312-644&quot;,&quot;title&quot;:&quot;Fer sfdsfdsdf123231321312&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sdsdsd2222-644&quot;,&quot;title&quot;:&quot;Fer sdsdsd2222&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blaaaaa-644&quot;,&quot;title&quot;:&quot;Bla blaaaaa&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blanjnjnjnnj-644&quot;,&quot;title&quot;:&quot;Bla blanjnjnjnnj&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tittle-644&quot;,&quot;title&quot;:&quot;Tittle&quot;,&quot;description&quot;:&quot;About lerning&quot;,&quot;body&quot;:&quot;aaaa&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeren-644&quot;,&quot;title&quot;:&quot;Jeren&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;And so he spoke, and so he spoke, that Lord of Castamere, but now the rains weep o&#39;er his hall, with no one there to hear. Yes, now the rains weep o&#39;er his hall, and not a soul to hear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:260}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>eval sleep(5000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5022</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

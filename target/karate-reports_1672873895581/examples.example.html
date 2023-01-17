@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("ecd77894-30fa-4a22-939d-423600665c24",{name:"fayasta"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.example</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-01-04 06:09:33 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[7:76]"><span>[7:76]</span> <span>retry request</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/example.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Tests for example purposes</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:76]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">debugretry</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:76]</span>
+                <span class="scenario-name">retry request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>39528</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:76]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url base_url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">18:08:53.989 &lt;&lt; lock released, cached callSingle: classpath:helpers/createToke.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.createToke</div>
+      </div>
+      <div class="time-cell passed">1045</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url base_url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.5">18:08:52.880 karate.env system property was: null 
+18:08:52.892 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/createToke.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: {&quot;email&quot;:&quot;#(userEmail)&quot;, &quot;password&quot;: &quot;#(userPassword)&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1017</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.8">18:08:53.290 request:
+1 &gt; POST https://conduit.productionready.io/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 59
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;}}
+
+18:08:53.476 request:
+2 &gt; POST https://conduit.productionready.io/api/users/login
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 59
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;}}
+
+18:08:53.981 response time in milliseconds: 501
+2 &lt; 200
+2 &lt; Date: Wed, 04 Jan 2023 23:08:54 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;14a-mnQxbReSmb0lKKfMmmcL2s/tLVQ&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Gz7CkzTzUvqF0H8efZAgbchUKTEGRSzSvJNSfQGIlLyvJ321qmKBe6yoioxW8jhtw73x485rKC4GT%2BbBEM51uvuNrk%2FU4EwSW0PgNVOgAMBoM3614fAzPCwwY0K4f0NgY1os&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 7847a38388159531-LIM
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate@test.com&quot;,&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authorization_token = response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure retry = {count: 10, interval: 5000}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params {limit:10, offset:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>retry until response.articles[0].favoritesCount == 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">39525</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.81">18:08:54.001 request:
+1 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:08:54.031 request:
+2 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+18:08:54.547 response time in milliseconds: 515
+2 &lt; 200
+2 &lt; Date: Wed, 04 Jan 2023 23:08:54 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;eb9-21X1SeYZMyzv28HiRb3CsqPq4WY&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=gp4QwEO4OZpWzZavaVfNWuBKF7qSlIdhMt2%2FEWvZx%2Fw8YiGTEJSWax08xhO8Rbg9gZlR6yCoj03w8FLyfpFIj6uIjaNCaXySrnjOJxuMW22m6zPCNRDKdnXV8S60IyRMrVTO&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 7847a3863c3056a0-LIM
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Daemon-II-Blackfyre-644&quot;,&quot;title&quot;:&quot;Daemon II Blackfyre&quot;,&quot;description&quot;:&quot;Pyne&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aegon-Frey-644&quot;,&quot;title&quot;:&quot;Aegon Frey&quot;,&quot;description&quot;:&quot;Branfield&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jonella-Cerwyn-644&quot;,&quot;title&quot;:&quot;Jonella Cerwyn&quot;,&quot;description&quot;:&quot;Chambers&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-qweqwe12321312sa-644&quot;,&quot;title&quot;:&quot;Fer qweqwe12321312sa&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sfdsfdsdf123231321312-644&quot;,&quot;title&quot;:&quot;Fer sfdsfdsdf123231321312&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sdsdsd2222-644&quot;,&quot;title&quot;:&quot;Fer sdsdsd2222&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blaaaaa-644&quot;,&quot;title&quot;:&quot;Bla blaaaaa&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blanjnjnjnnj-644&quot;,&quot;title&quot;:&quot;Bla blanjnjnjnnj&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tittle-644&quot;,&quot;title&quot;:&quot;Tittle&quot;,&quot;description&quot;:&quot;About lerning&quot;,&quot;body&quot;:&quot;aaaa&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeren-644&quot;,&quot;title&quot;:&quot;Jeren&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;And so he spoke, and so he spoke, that Lord of Castamere, but now the rains weep o&#39;er his hall, with no one there to hear. Yes, now the rains weep o&#39;er his hall, and not a soul to hear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:260}
+
+18:08:54.552 retry condition not satisfied: response.articles[0].favoritesCount == 1
+18:08:54.552 sleeping before retry #1
+18:08:59.558 request:
+3 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+3 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+3 &gt; Host: conduit.productionready.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+18:08:59.614 request:
+4 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+4 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+4 &gt; Host: api.realworld.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:00.122 response time in milliseconds: 498
+4 &lt; 200
+4 &lt; Date: Wed, 04 Jan 2023 23:09:00 GMT
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; X-Powered-By: Express
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Etag: W/&quot;eb9-21X1SeYZMyzv28HiRb3CsqPq4WY&quot;
+4 &lt; Via: 1.1 vegur
+4 &lt; CF-Cache-Status: DYNAMIC
+4 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=FJzsFMaWVu2FZRbiC6bA%2BHt%2BCcgTfXGeB5DmTy%2F3x71wlmQZmg%2FajZ3DX%2BbpO2P%2Br3RC%2FZjS2MTTG3ja8HZR%2F6QAn7AYB3wBpyx6dI2%2BZuoq3mW7DBPKlhVOYmStv4vx7hPp&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+4 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+4 &lt; Server: cloudflare
+4 &lt; CF-RAY: 7847a3a92f459540-LIM
+4 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Daemon-II-Blackfyre-644&quot;,&quot;title&quot;:&quot;Daemon II Blackfyre&quot;,&quot;description&quot;:&quot;Pyne&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aegon-Frey-644&quot;,&quot;title&quot;:&quot;Aegon Frey&quot;,&quot;description&quot;:&quot;Branfield&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jonella-Cerwyn-644&quot;,&quot;title&quot;:&quot;Jonella Cerwyn&quot;,&quot;description&quot;:&quot;Chambers&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-qweqwe12321312sa-644&quot;,&quot;title&quot;:&quot;Fer qweqwe12321312sa&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sfdsfdsdf123231321312-644&quot;,&quot;title&quot;:&quot;Fer sfdsfdsdf123231321312&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sdsdsd2222-644&quot;,&quot;title&quot;:&quot;Fer sdsdsd2222&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blaaaaa-644&quot;,&quot;title&quot;:&quot;Bla blaaaaa&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blanjnjnjnnj-644&quot;,&quot;title&quot;:&quot;Bla blanjnjnjnnj&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tittle-644&quot;,&quot;title&quot;:&quot;Tittle&quot;,&quot;description&quot;:&quot;About lerning&quot;,&quot;body&quot;:&quot;aaaa&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeren-644&quot;,&quot;title&quot;:&quot;Jeren&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;And so he spoke, and so he spoke, that Lord of Castamere, but now the rains weep o&#39;er his hall, with no one there to hear. Yes, now the rains weep o&#39;er his hall, and not a soul to hear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:260}
+
+18:09:00.124 retry condition not satisfied: response.articles[0].favoritesCount == 1
+18:09:00.124 sleeping before retry #2
+18:09:05.131 request:
+5 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+5 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+5 &gt; Host: conduit.productionready.io
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+5 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:05.168 request:
+6 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+6 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+6 &gt; Host: api.realworld.io
+6 &gt; Connection: Keep-Alive
+6 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+6 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:05.731 response time in milliseconds: 562
+6 &lt; 200
+6 &lt; Date: Wed, 04 Jan 2023 23:09:05 GMT
+6 &lt; Content-Type: application/json; charset=utf-8
+6 &lt; Transfer-Encoding: chunked
+6 &lt; Connection: keep-alive
+6 &lt; X-Powered-By: Express
+6 &lt; Access-Control-Allow-Origin: *
+6 &lt; Etag: W/&quot;eb9-21X1SeYZMyzv28HiRb3CsqPq4WY&quot;
+6 &lt; Via: 1.1 vegur
+6 &lt; CF-Cache-Status: DYNAMIC
+6 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=dzTvOOBDkafc0m7sLhluTWx0pPtPot2bAAHrfTi8B3c1mYTp3lNkJ0JwpHk30FUTph6vYKUJUaBACvFgJq4E1hIZfx9fX6%2BJsV6I8LtEGzJDbmTlY40tFAZEU8Qncy5fIE1A&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+6 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+6 &lt; Server: cloudflare
+6 &lt; CF-RAY: 7847a3cbde079530-LIM
+6 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Daemon-II-Blackfyre-644&quot;,&quot;title&quot;:&quot;Daemon II Blackfyre&quot;,&quot;description&quot;:&quot;Pyne&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aegon-Frey-644&quot;,&quot;title&quot;:&quot;Aegon Frey&quot;,&quot;description&quot;:&quot;Branfield&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jonella-Cerwyn-644&quot;,&quot;title&quot;:&quot;Jonella Cerwyn&quot;,&quot;description&quot;:&quot;Chambers&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-qweqwe12321312sa-644&quot;,&quot;title&quot;:&quot;Fer qweqwe12321312sa&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sfdsfdsdf123231321312-644&quot;,&quot;title&quot;:&quot;Fer sfdsfdsdf123231321312&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sdsdsd2222-644&quot;,&quot;title&quot;:&quot;Fer sdsdsd2222&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blaaaaa-644&quot;,&quot;title&quot;:&quot;Bla blaaaaa&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blanjnjnjnnj-644&quot;,&quot;title&quot;:&quot;Bla blanjnjnjnnj&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tittle-644&quot;,&quot;title&quot;:&quot;Tittle&quot;,&quot;description&quot;:&quot;About lerning&quot;,&quot;body&quot;:&quot;aaaa&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeren-644&quot;,&quot;title&quot;:&quot;Jeren&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;And so he spoke, and so he spoke, that Lord of Castamere, but now the rains weep o&#39;er his hall, with no one there to hear. Yes, now the rains weep o&#39;er his hall, and not a soul to hear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:260}
+
+18:09:05.733 retry condition not satisfied: response.articles[0].favoritesCount == 1
+18:09:05.733 sleeping before retry #3
+18:09:10.737 request:
+7 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+7 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+7 &gt; Host: conduit.productionready.io
+7 &gt; Connection: Keep-Alive
+7 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+7 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:10.792 request:
+8 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+8 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+8 &gt; Host: api.realworld.io
+8 &gt; Connection: Keep-Alive
+8 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+8 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:11.378 response time in milliseconds: 566
+8 &lt; 200
+8 &lt; Date: Wed, 04 Jan 2023 23:09:11 GMT
+8 &lt; Content-Type: application/json; charset=utf-8
+8 &lt; Transfer-Encoding: chunked
+8 &lt; Connection: keep-alive
+8 &lt; X-Powered-By: Express
+8 &lt; Access-Control-Allow-Origin: *
+8 &lt; Etag: W/&quot;eb9-21X1SeYZMyzv28HiRb3CsqPq4WY&quot;
+8 &lt; Via: 1.1 vegur
+8 &lt; CF-Cache-Status: DYNAMIC
+8 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=4srh3HOqCUdm%2BR7RaA4wRagvHnHsqt2FaNljd%2F%2BgRgKIGyMelVcbQ81YxcSK9KZxntl38O5CCGyqgtna2SnpyU4Qgm91th7eIxFPk%2BCHLw7ZlV%2BUfVjA9Ci%2FNYkLL3cI01yL&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+8 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+8 &lt; Server: cloudflare
+8 &lt; CF-RAY: 7847a3eefddd951e-LIM
+8 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Daemon-II-Blackfyre-644&quot;,&quot;title&quot;:&quot;Daemon II Blackfyre&quot;,&quot;description&quot;:&quot;Pyne&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aegon-Frey-644&quot;,&quot;title&quot;:&quot;Aegon Frey&quot;,&quot;description&quot;:&quot;Branfield&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jonella-Cerwyn-644&quot;,&quot;title&quot;:&quot;Jonella Cerwyn&quot;,&quot;description&quot;:&quot;Chambers&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-qweqwe12321312sa-644&quot;,&quot;title&quot;:&quot;Fer qweqwe12321312sa&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sfdsfdsdf123231321312-644&quot;,&quot;title&quot;:&quot;Fer sfdsfdsdf123231321312&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sdsdsd2222-644&quot;,&quot;title&quot;:&quot;Fer sdsdsd2222&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blaaaaa-644&quot;,&quot;title&quot;:&quot;Bla blaaaaa&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blanjnjnjnnj-644&quot;,&quot;title&quot;:&quot;Bla blanjnjnjnnj&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tittle-644&quot;,&quot;title&quot;:&quot;Tittle&quot;,&quot;description&quot;:&quot;About lerning&quot;,&quot;body&quot;:&quot;aaaa&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeren-644&quot;,&quot;title&quot;:&quot;Jeren&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;And so he spoke, and so he spoke, that Lord of Castamere, but now the rains weep o&#39;er his hall, with no one there to hear. Yes, now the rains weep o&#39;er his hall, and not a soul to hear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:260}
+
+18:09:11.379 retry condition not satisfied: response.articles[0].favoritesCount == 1
+18:09:11.380 sleeping before retry #4
+18:09:16.385 request:
+9 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+9 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+9 &gt; Host: conduit.productionready.io
+9 &gt; Connection: Keep-Alive
+9 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+9 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:16.432 request:
+10 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+10 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+10 &gt; Host: api.realworld.io
+10 &gt; Connection: Keep-Alive
+10 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+10 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:16.989 response time in milliseconds: 555
+10 &lt; 200
+10 &lt; Date: Wed, 04 Jan 2023 23:09:17 GMT
+10 &lt; Content-Type: application/json; charset=utf-8
+10 &lt; Transfer-Encoding: chunked
+10 &lt; Connection: keep-alive
+10 &lt; X-Powered-By: Express
+10 &lt; Access-Control-Allow-Origin: *
+10 &lt; Etag: W/&quot;eb9-21X1SeYZMyzv28HiRb3CsqPq4WY&quot;
+10 &lt; Via: 1.1 vegur
+10 &lt; CF-Cache-Status: DYNAMIC
+10 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=mcec0kDoa8pV%2BK0z36%2FK4ukF4zkAAwdxRR31%2FPqw5mTQ1wTDv2vsyDYIeNcKdDIvcwCBw21%2BhUDNnB2U2F53GTfZUxMV1bMua5puYYw9M8VQvHXkVxM4ttXkr%2BRGQGR59rBL&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+10 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+10 &lt; Server: cloudflare
+10 &lt; CF-RAY: 7847a41238bd9534-LIM
+10 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Daemon-II-Blackfyre-644&quot;,&quot;title&quot;:&quot;Daemon II Blackfyre&quot;,&quot;description&quot;:&quot;Pyne&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aegon-Frey-644&quot;,&quot;title&quot;:&quot;Aegon Frey&quot;,&quot;description&quot;:&quot;Branfield&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jonella-Cerwyn-644&quot;,&quot;title&quot;:&quot;Jonella Cerwyn&quot;,&quot;description&quot;:&quot;Chambers&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-qweqwe12321312sa-644&quot;,&quot;title&quot;:&quot;Fer qweqwe12321312sa&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sfdsfdsdf123231321312-644&quot;,&quot;title&quot;:&quot;Fer sfdsfdsdf123231321312&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sdsdsd2222-644&quot;,&quot;title&quot;:&quot;Fer sdsdsd2222&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blaaaaa-644&quot;,&quot;title&quot;:&quot;Bla blaaaaa&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blanjnjnjnnj-644&quot;,&quot;title&quot;:&quot;Bla blanjnjnjnnj&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tittle-644&quot;,&quot;title&quot;:&quot;Tittle&quot;,&quot;description&quot;:&quot;About lerning&quot;,&quot;body&quot;:&quot;aaaa&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeren-644&quot;,&quot;title&quot;:&quot;Jeren&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;And so he spoke, and so he spoke, that Lord of Castamere, but now the rains weep o&#39;er his hall, with no one there to hear. Yes, now the rains weep o&#39;er his hall, and not a soul to hear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:260}
+
+18:09:16.991 retry condition not satisfied: response.articles[0].favoritesCount == 1
+18:09:16.991 sleeping before retry #5
+18:09:21.997 request:
+11 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+11 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+11 &gt; Host: conduit.productionready.io
+11 &gt; Connection: Keep-Alive
+11 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+11 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:22.033 request:
+12 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+12 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+12 &gt; Host: api.realworld.io
+12 &gt; Connection: Keep-Alive
+12 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+12 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:22.515 response time in milliseconds: 462
+12 &lt; 200
+12 &lt; Date: Wed, 04 Jan 2023 23:09:22 GMT
+12 &lt; Content-Type: application/json; charset=utf-8
+12 &lt; Transfer-Encoding: chunked
+12 &lt; Connection: keep-alive
+12 &lt; X-Powered-By: Express
+12 &lt; Access-Control-Allow-Origin: *
+12 &lt; Etag: W/&quot;eb9-21X1SeYZMyzv28HiRb3CsqPq4WY&quot;
+12 &lt; Via: 1.1 vegur
+12 &lt; CF-Cache-Status: DYNAMIC
+12 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=NMn3BYtRTlDtu76xAzXeMPydDVuPYbUw2selN4prhazwD0x9RCXdqkoGu5vQHUIXyPrr3iqpX3kgm6jogEij6KH9dn31THmSqoZmxmf%2BYwywCA%2BpS9cdCu10kWJ1Vkel6geN&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+12 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+12 &lt; Server: cloudflare
+12 &lt; CF-RAY: 7847a4354e7c9536-LIM
+12 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Daemon-II-Blackfyre-644&quot;,&quot;title&quot;:&quot;Daemon II Blackfyre&quot;,&quot;description&quot;:&quot;Pyne&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aegon-Frey-644&quot;,&quot;title&quot;:&quot;Aegon Frey&quot;,&quot;description&quot;:&quot;Branfield&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jonella-Cerwyn-644&quot;,&quot;title&quot;:&quot;Jonella Cerwyn&quot;,&quot;description&quot;:&quot;Chambers&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-qweqwe12321312sa-644&quot;,&quot;title&quot;:&quot;Fer qweqwe12321312sa&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sfdsfdsdf123231321312-644&quot;,&quot;title&quot;:&quot;Fer sfdsfdsdf123231321312&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sdsdsd2222-644&quot;,&quot;title&quot;:&quot;Fer sdsdsd2222&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blaaaaa-644&quot;,&quot;title&quot;:&quot;Bla blaaaaa&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blanjnjnjnnj-644&quot;,&quot;title&quot;:&quot;Bla blanjnjnjnnj&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tittle-644&quot;,&quot;title&quot;:&quot;Tittle&quot;,&quot;description&quot;:&quot;About lerning&quot;,&quot;body&quot;:&quot;aaaa&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeren-644&quot;,&quot;title&quot;:&quot;Jeren&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;And so he spoke, and so he spoke, that Lord of Castamere, but now the rains weep o&#39;er his hall, with no one there to hear. Yes, now the rains weep o&#39;er his hall, and not a soul to hear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:260}
+
+18:09:22.517 retry condition not satisfied: response.articles[0].favoritesCount == 1
+18:09:22.517 sleeping before retry #6
+18:09:27.519 request:
+13 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+13 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+13 &gt; Host: conduit.productionready.io
+13 &gt; Connection: Keep-Alive
+13 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+13 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:27.549 request:
+14 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+14 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+14 &gt; Host: api.realworld.io
+14 &gt; Connection: Keep-Alive
+14 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+14 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:28.023 response time in milliseconds: 474
+14 &lt; 200
+14 &lt; Date: Wed, 04 Jan 2023 23:09:28 GMT
+14 &lt; Content-Type: application/json; charset=utf-8
+14 &lt; Transfer-Encoding: chunked
+14 &lt; Connection: keep-alive
+14 &lt; X-Powered-By: Express
+14 &lt; Access-Control-Allow-Origin: *
+14 &lt; Etag: W/&quot;eb9-21X1SeYZMyzv28HiRb3CsqPq4WY&quot;
+14 &lt; Via: 1.1 vegur
+14 &lt; CF-Cache-Status: DYNAMIC
+14 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=ar%2BmzXjG5P8Vl2Ipbny6UU%2B1NrVqsgJLEtkKgHYlYJILJbDdVWkL80QXYrWTH3KWtu0WM%2B6Jf93xjRlKcU0GAJpCHFBeyXmNQ2yJY3WJB%2BWVDLiEnXvbSHgJmSaoVETHljPl&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+14 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+14 &lt; Server: cloudflare
+14 &lt; CF-RAY: 7847a457b83a36e3-LIM
+14 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Daemon-II-Blackfyre-644&quot;,&quot;title&quot;:&quot;Daemon II Blackfyre&quot;,&quot;description&quot;:&quot;Pyne&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aegon-Frey-644&quot;,&quot;title&quot;:&quot;Aegon Frey&quot;,&quot;description&quot;:&quot;Branfield&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jonella-Cerwyn-644&quot;,&quot;title&quot;:&quot;Jonella Cerwyn&quot;,&quot;description&quot;:&quot;Chambers&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-qweqwe12321312sa-644&quot;,&quot;title&quot;:&quot;Fer qweqwe12321312sa&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sfdsfdsdf123231321312-644&quot;,&quot;title&quot;:&quot;Fer sfdsfdsdf123231321312&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sdsdsd2222-644&quot;,&quot;title&quot;:&quot;Fer sdsdsd2222&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blaaaaa-644&quot;,&quot;title&quot;:&quot;Bla blaaaaa&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blanjnjnjnnj-644&quot;,&quot;title&quot;:&quot;Bla blanjnjnjnnj&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tittle-644&quot;,&quot;title&quot;:&quot;Tittle&quot;,&quot;description&quot;:&quot;About lerning&quot;,&quot;body&quot;:&quot;aaaa&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeren-644&quot;,&quot;title&quot;:&quot;Jeren&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;And so he spoke, and so he spoke, that Lord of Castamere, but now the rains weep o&#39;er his hall, with no one there to hear. Yes, now the rains weep o&#39;er his hall, and not a soul to hear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:260}
+
+18:09:28.025 retry condition not satisfied: response.articles[0].favoritesCount == 1
+18:09:28.026 sleeping before retry #7
+18:09:33.031 request:
+15 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+15 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+15 &gt; Host: conduit.productionready.io
+15 &gt; Connection: Keep-Alive
+15 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+15 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:33.061 request:
+16 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+16 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMSIsImlhdCI6MTY3Mjg3MzczMywiZXhwIjoxNjc4MDU3NzMzfQ.ziMMHfEkEApuCwGEE6jUg_U5UWzfe9JUSnoFZCIEou4
+16 &gt; Host: api.realworld.io
+16 &gt; Connection: Keep-Alive
+16 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_211)
+16 &gt; Accept-Encoding: gzip,deflate
+
+
+18:09:33.523 response time in milliseconds: 461
+16 &lt; 200
+16 &lt; Date: Wed, 04 Jan 2023 23:09:33 GMT
+16 &lt; Content-Type: application/json; charset=utf-8
+16 &lt; Transfer-Encoding: chunked
+16 &lt; Connection: keep-alive
+16 &lt; X-Powered-By: Express
+16 &lt; Access-Control-Allow-Origin: *
+16 &lt; Etag: W/&quot;eb8-HmgpTB5J3Def8aIDH5DGG8t4cwE&quot;
+16 &lt; Via: 1.1 vegur
+16 &lt; CF-Cache-Status: DYNAMIC
+16 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=f%2B5ySS%2FHe7RrxubD6vsN0NbcI4FTtoyCnXB17cMxTxRgn0QrnzhlX%2BgT1OR2AGde1X2D2rK6KAwjtmWuu4QIcZEMFV%2FSv124YIGyWpWRZE881HijXr5AWmJmnlrwFq0vnI01&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+16 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+16 &lt; Server: cloudflare
+16 &lt; CF-RAY: 7847a47a2c81953d-LIM
+16 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Daemon-II-Blackfyre-644&quot;,&quot;title&quot;:&quot;Daemon II Blackfyre&quot;,&quot;description&quot;:&quot;Pyne&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:55:07.469Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aegon-Frey-644&quot;,&quot;title&quot;:&quot;Aegon Frey&quot;,&quot;description&quot;:&quot;Branfield&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:09:03.784Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jonella-Cerwyn-644&quot;,&quot;title&quot;:&quot;Jonella Cerwyn&quot;,&quot;description&quot;:&quot;Chambers&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T22:08:55.071Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-qweqwe12321312sa-644&quot;,&quot;title&quot;:&quot;Fer qweqwe12321312sa&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T21:38:07.227Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sfdsfdsdf123231321312-644&quot;,&quot;title&quot;:&quot;Fer sfdsfdsdf123231321312&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:55:24.651Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Fer-sdsdsd2222-644&quot;,&quot;title&quot;:&quot;Fer sdsdsd2222&quot;,&quot;description&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;body&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T19:43:05.697Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blaaaaa-644&quot;,&quot;title&quot;:&quot;Bla blaaaaa&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T12:31:53.927Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bla-blanjnjnjnnj-644&quot;,&quot;title&quot;:&quot;Bla blanjnjnjnnj&quot;,&quot;description&quot;:&quot;test test&quot;,&quot;body&quot;:&quot;test test&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:59:46.533Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tittle-644&quot;,&quot;title&quot;:&quot;Tittle&quot;,&quot;description&quot;:&quot;About lerning&quot;,&quot;body&quot;:&quot;aaaa&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-04T11:35:43.631Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeren-644&quot;,&quot;title&quot;:&quot;Jeren&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;And so he spoke, and so he spoke, that Lord of Castamere, but now the rains weep o&#39;er his hall, with no one there to hear. Yes, now the rains weep o&#39;er his hall, and not a soul to hear.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-10T21:55:44.983Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Karate1&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:260}
+
+18:09:33.525 retry condition satisfied
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

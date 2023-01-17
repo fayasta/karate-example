@@ -29,9 +29,10 @@ jobs:
         cache: maven
     - name: Build with Maven
       run:  mvn -B test --file pom.xml
-    - name: Archive Cucumber results
+    - name: Karate results
+      if: always()
       uses: actions/upload-artifact@v3
       with:
-        name: code-coverage-report
-        path: target/site/serenity/
+        name: archive-karate-report
+        path: target/cucumber-html-reports/
         retention-days: 3
